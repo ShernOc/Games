@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER GAME</title>
+</head>
+<body>
+    <h1>ROCK PAPER SCISSOR GAME</h1>
+     <h2>Instructions</h2>
+     <p>The rules of Rock Paper and Scissor as simple as possible.
+        <ul><li>Rock beats scissor</li>
+            <li>Scissor beats paper</li>
+            <li>Paper beats rocks</li>
+        </ul>
+        We have two players, <b>you and the computer.</b> Therefore if you pick rock and computer picks scissor you win!. 
+     </p>
+
+     <!-- We are going to display the score/results  of the player on the webpage  -->
+      <h2>PLAY THE GAME</h2>
+
+      <button onclick="playerMove('rock')">Rock</button>
+      <button onclick="playerMove('paper')">Paper</button>
+      <button onclick="playerMove('scissor')">Scissor</button>
+
+    <h3>SCORE BOARD</h3>
+    <!-- results of user  -->
+    <p class="js-results"></p>
+
+    <!-- computer move -->
+    <p class="js-move"></p>
+
+    <!--Show the score under the game --->
+    <p class="js-score"></p>
+    
+    <!-- reset button -->
+      <!-- reset button -->
+      <button onclick="
+      score.wins = 0;
+      score.losses =0;
+      score.ties = 0;
+      
+    // remove the score/local storage
+    localStorage.removeItem('score')
+
+    // the update function.
+    updateScore();
+      ">Reset Score</button>
+
+</body>
+<script src="rock.js"></script>
+
+
+</html>
