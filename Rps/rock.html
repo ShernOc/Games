@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rock.css">
     <title>ROCK PAPER GAME</title>
 </head>
 <body>
-    <h1>ROCK PAPER SCISSOR GAME</h1>
+    <h1 class="title">ROCK PAPER SCISSOR GAME</h1>
      <h2>Instructions</h2>
      <p>The rules of Rock Paper and Scissor as simple as possible.
         <ul><li>Rock beats scissor</li>
@@ -19,9 +20,15 @@
      <!-- We are going to display the score/results  of the player on the webpage  -->
       <h2>PLAY THE GAME</h2>
 
-      <button onclick="playerMove('rock')">Rock</button>
-      <button onclick="playerMove('paper')">Paper</button>
-      <button onclick="playerMove('scissor')">Scissor</button>
+      <button class="bt" onclick="playerMove('rock')">Rock</button>
+
+      <button class="bt"
+      
+      onclick="playerMove('paper')">Paper</button>
+
+      <button 
+      class="bt"
+      onclick="playerMove('scissor')">Scissor</button>
 
     <h3>SCORE BOARD</h3>
     <!-- results of user  -->

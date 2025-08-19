@@ -25,12 +25,12 @@
     <br>
     <button onclick="theNumber('0')">0</button>
     <button onclick="theNumber('/')">/</button>
-    <button onclick="theNumber('1')">ac</button>
+    <button onclick="theNumber('1'); localStorage.removeItem ('score')" >ac</button>
      <button title="percentage" onclick="
     
     theNumber('%')">%</button>
     <br>
-    <button onclick="theNumber('=' + `${results = eval(results)}`)">=</button>
+    <button onclick="theNumber('='+ `${results = eval(score)}`)">=</button>
     <br>
 
     
@@ -39,8 +39,8 @@
 
 
     <script src="calc.js">
+        calculation = '';
 
-        calculation = ''
     </script>
 </body>
 
