@@ -78,9 +78,29 @@ function playerMove(userMove) {
     // results:
     document.querySelector('.js-results').innerHTML = results
 
-    // the moves
-    document.querySelector('.js-move').innerHTML = `Your Move : ${userMove}: 
-    Computer Move: ${compPick} `
+    // the moves 
+    /*You 
+      <img src=".images/hand1.jpg" class="move-icon"> 
+    <img src="./images/hand2.jpg" class="move-icon">
+    computer*/
+
+    
+    // document.querySelector('.js-move').innerHTML = 
+    // `Your Move : <img src="/images/${userMove}.jpg" class="move-icon"> 
+    // <br><br>
+    // Computer Move: 
+    //  <img src="images/${compPick}.jpg" class="move-icon"> `
+
+    //Original : 
+    document.querySelector('.js-move').innerHTML = `Your Move : ${userMove}:<br> 
+    <br>Computer Move: ${compPick} `
+
+
+    
+
+
+
+
 
 }
 

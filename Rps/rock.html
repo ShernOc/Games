@@ -20,29 +20,39 @@
      <!-- We are going to display the score/results  of the player on the webpage  -->
       <h2>PLAY THE GAME</h2>
 
-      <button class="bt" onclick="playerMove('rock')">Rock</button>
 
-      <button class="bt"
-      
-      onclick="playerMove('paper')">Paper</button>
+      <!-- added the image attribute to the rock, and we removed the rock,paper names  -->
+      <button class="move-button" onclick="playerMove('rock')"><img src="images/hand1.jpg" alt="rock" class="move-icon">
+      </button>
+
+      <button class="move-button"
+      onclick="playerMove('paper')">
+      <img src="images/hand2.jpg" alt="paper" class="move-icon">
+    </button>
 
       <button 
-      class="bt"
-      onclick="playerMove('scissor')">Scissor</button>
+      class="move-button"
+      onclick="playerMove('scissor')"> <img src="images/hand3.jpg" alt="scissor" class="move-icon"></button>
 
     <h3>SCORE BOARD</h3>
-    <!-- results of user  -->
-    <p class="js-results"></p>
+    <!-- results of user // added another css class of results  -->
+    <p class="js-results results"></p>
 
     <!-- computer move -->
-    <p class="js-move"></p>
+     <!-- added an image for  -->
+    <p class="js-move">
 
-    <!--Show the score under the game --->
-    <p class="js-score"></p>
+    <!-- Your Move : <img src="images/hand1.jpg" class="move-icon"> 
+    <br><br>
+    Computer Move: 
+     <img src="images/hand2.jpg" class="move-icon">  -->
+    </p>
+
+    <!--Show the score under the game / added a score class  --->
+    <p class="js-score score"></p>
     
-    <!-- reset button -->
-      <!-- reset button -->
-      <button onclick="
+    <!-- reset button added a class (reset-score) -->
+      <button class="reset-score-button" onclick="
       score.wins = 0;
       score.losses =0;
       score.ties = 0;
@@ -52,7 +62,7 @@
 
     // the update function.
     updateScore();
-      ">Reset Score</button>
+      " >Reset Score</button>
 
 </body>
 <script src="rock.js"></script>
